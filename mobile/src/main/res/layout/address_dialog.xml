@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:layout_marginBottom="@dimen/size_50dp"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/size_1dp"
+            android:paddingBottom="@dimen/size_60dp">
+
+            <LinearLayout
+                android:id="@+id/closeLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_6dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left"
+                    android:text="Enter address details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_size16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cancelImageView"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:padding="@dimen/size_8dp"
+                    android:src="@drawable/close_new"
+                    app:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left|top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="House Flat/Floor no. *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/houseNoEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginRight="@dimen/size_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edline"
+                            android:gravity="top"
+                            android:hint="House/Flat no *"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/size_8dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/midGray"
+                            android:textSize="@dimen/font_size12"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/roboto" />
+
+                        <EditText
+                            android:id="@+id/floorEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginRight="@dimen/size_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edline"
+                            android:gravity="top"
+                            android:hint="Floor (Optional)"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/size_8dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/midGray"
+                            android:textSize="@dimen/font_size12"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/roboto" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="Complete Address *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/completeAddressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:gravity="top"
+                        android:hint="Complete Address *"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="Area Name *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/areaNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:gravity="top"
+                        android:hint="Area Name *"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="City *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/cityNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:hint="City Name *"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="State *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/stateNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:hint="State Name *"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="Country *"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/countryNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:hint="Country Name *"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="How to reach/Landmark"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/landMarkEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:layout_marginBottom="@dimen/size_20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edline"
+                        android:gravity="top"
+                        android:hint="Landmark / Entry gate / Street"
+                        android:imeOptions="actionDone"
+                        android:padding="@dimen/size_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/midGray"
+                        android:textSize="@dimen/font_size12"
+                        android:textStyle="normal"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:padding="@dimen/size_6dp"
+                        android:text="Address Type"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/font_size11"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/addressTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:background="@drawable/ed_rounded"
+                        android:overlapAnchor="false"
+                        android:padding="@dimen/size_10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/darkGray"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/font_size"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/saveAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_6dp"
+                android:background="@drawable/bg_common"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/size_8dp"
+                android:text="Save Address"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

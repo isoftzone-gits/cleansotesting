@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DF1D25</color>
+    <color name="colorPrimaryDark">#DF1D25</color>
+    <color name="colorAccent">#DF1D25</color>
+
+    <color name="graySplash">#C1C1C1</color>
+
+    <color name="black">#000000</color>
+    <color name="spaceBlack">#454545</color>
+    <color name="primaryBlue">#005790</color>
+    <color name="primaryBlueMain">#005790</color>
+
+    <color name="primaryBlueMainFullTrans">#00000000</color>
+    <color name="darkgray">#555555</color>
+    <color name="midGray">#bababa</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="blacktranspratnt">#80000000</color>
+
+    <!--  <color name="lightSmoke">#F8F7F9</color>
+    #878787   dark gray
+  -->
+    <color name="lightSmoke">#EFEFEF</color>
+    <color name="primaryBlueMainTrans">#000C4A84</color>
+    <color name="darkBlue">#00456C</color>
+    <color name="darkGray">#555555</color>
+    <color name="orange">#FFFE932A</color>
+
+    <color name="orangeMainFullTrans">#00000000</color>
+
+
+    <color name="yellow">#EF7613</color>
+    <color name="colorPrimaryTransperent">#80005790</color>
+    <color name="green">#66B971</color>
+    <color name="lightGreen">#B6DBB1</color>
+    <color name="fontGreen">#478900</color>
+    <color name="lightred">#F0C4C5</color>
+    <color name="fontred">#C0404C</color>
+    <color name="redfew">#66C0404C</color>
+
+
+    <color name="darkRed">#DF1D25</color>
+    <color name="dangerRed">#FFF02903</color>
+    <color name="lightGray">#c6c6c6</color>
+    <color name="softBlue">#4A9DD6</color>
+    <color name="lightBlue">#76B4F7</color>
+
+    <color name="verylightBlue">#8076B4F7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="awaiting_color">#C43E35</color>
+    <color name="inprocess_color">#E4885E</color>
+    <color name="received_color">#31B472</color>
+    <color name="viewall_color">#C0CAC0</color>
+    <color name="parts_forwarded_filled_color">#4A9DD6</color>
+    <color name="awaiting_order_filledpartsunavailable_color">#C43E35</color>
+    <color name="parts_unavailable_color">#B24E4B</color>
+
+
+    <color name="gray_progress">#E7E7E7</color>
+
+    <color name="verylightgray">#efefef</color>
+
+    <color name="veryVerylightgray">#62eaeaea</color>
+
+    <color name="transperent">#00000000</color>
+
+    <color name="darkgreen">#118675</color>
+    <color name="selectedGray">#F1F1F1</color>
+    <color name="colorbg">#D3D3D3</color>
+    <color name="colorbtn">#0860BD</color>
+    <color name="colorfooter">#8006468D</color>
+    <color name="colortexthint">#A5BBE1</color>
+    <color name="colorroutetext">#555555</color>
+    <color name="colordisable_icon">#83AFDE</color>
+    <color name="colorroutstarted_icon">#9BC874</color>
+    <color name="colorsetting_devider">#C8C7CC</color>
+    <color name="color_cardview_notdeliver">#ECECEC</color>
+    <color name="color_chat_header">#EFEFF5</color>
+    <color name="color_disabletxt">#8F8F8F</color>
+    <color name="black_p50">#80000000</color>
+
+    <color name="lightblue">#E5EDF8</color>
+    <color name="purple">#6A4095</color>
+
+    <color name="loginbox">#00507C</color>
+    <color name="loginbck">#1578AE</color>
+    <color name="logined">#003651</color>
+    <color name="loginbottom">#1578AE</color>
+
+
+    <color name="coup">#cc33ff</color>
+    <color name="del">#F26A04</color>
+    <color name="hel">#CABF15</color>
+    <color name="how">#009CFF</color>
+    <color name="listn">#20C049</color>
+    <color name="call">#FF3399</color>
+    <color name="browse">#00FCFF</color>
+    <color name="pay">#FF3C00</color>
+    <color name="set">#7E52E3</color>
+
+
+
+</resources>

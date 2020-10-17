@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_60dp"
+            android:background="@color/verylightgray"
+            android:orientation="vertical">
+
+            <include layout="@layout/custom_toolbar" />
+
+            <LinearLayout
+                android:id="@+id/headerColorLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="House/flat no / Area Name/ City/ Pincode"
+                    android:padding="@dimen/size_3dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/font_size14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/statusLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_5dp">
+
+                <TextView
+                    android:id="@+id/placedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:padding="@dimen/size_3dp"
+                    android:text="Placed"
+                    android:textColor="@color/fontGreen"
+                    android:textSize="@dimen/font_size12" />
+
+                <ImageView
+                    android:id="@+id/firstImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_3dp"
+                    android:layout_marginTop="@dimen/size_1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenbg" />
+
+                <TextView
+                    android:id="@+id/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="left"
+                    android:padding="@dimen/size_3dp"
+                    android:text="Progress"
+                    android:textColor="@color/midGray"
+                    android:textSize="@dimen/font_size12" />
+
+                <ImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_3dp"
+                    android:layout_marginTop="@dimen/size_1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/graybg" />
+
+                <TextView
+                    android:id="@+id/dispatchedextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="left"
+                    android:padding="@dimen/size_3dp"
+                    android:text="Dispatched "
+                    android:textColor="@color/midGray"
+                    android:textSize="@dimen/font_size12" />
+
+                <ImageView
+                    android:id="@+id/thirdImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_3dp"
+                    android:layout_marginTop="@dimen/size_1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/graybg" />
+
+                <TextView
+                    android:id="@+id/deliveredTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="right"
+                    android:padding="@dimen/size_3dp"
+                    android:text="Delivered"
+                    android:textColor="@color/midGray"
+                    android:textSize="@dimen/font_size12" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderProductListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/size_5dp"
+                        android:text="Total Qty : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/size_5dp"
+                        android:text="Total Amount : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <TextView
+                        android:id="@+id/totalQtyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/size_5dp"
+                        android:text="Item Total : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size12" />
+
+                    <TextView
+                        android:id="@+id/netAmtTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/size_5dp"
+                        android:text="Total Amount : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size14" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/verylightgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/paymentLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_30dp"
+                        android:layout_height="@dimen/size_15dp"
+                        android:src="@drawable/rupeesymbol" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/payUsingTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/size_6dp"
+                                android:drawableTint="@color/colorPrimary"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="PAY USING"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size12" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size_10dp"
+                                android:layout_height="@dimen/size_10dp"
+                                android:src="@drawable/upchevron" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/payUsingNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:hint="Select"
+                            android:text=""
+                            android:textColor="@color/darkGray"
+                            android:textColorHint="@color/midGray"
+                            android:textSize="@dimen/font_size11" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/placeOrderCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_1dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/size_8dp">
+
+                    <TextView
+                        android:id="@+id/checkoutTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="@dimen/size_10dp"
+                        android:text="Place Order"
+                        android:textColor="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_shape_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/veryVerylightgray"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:layout_marginRight="@dimen/size_4dp"
+            android:layout_marginTop="@dimen/size_2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:padding="@dimen/size_5dp"
+                android:src="@drawable/launcher_iconapp" />
+
+            <TextView
+                android:id="@+id/text_viewtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:layout_weight="1"
+                android:padding="@dimen/size_5dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size13" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msgtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_3dp"
+            android:text=""
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/font_size12" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_5dp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:padding="@dimen/size_3dp"
+            android:text=""
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/font_size12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

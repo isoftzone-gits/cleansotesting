@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/size_15dp"
+        android:paddingEnd="@dimen/size_15dp">
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_corner"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/layout_animation_from_bottom"
+            android:padding="@dimen/size_15dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Select image source"
+                android:textColor="#99313739"
+                android:textSize="@dimen/font_size15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:id="@+id/layout_for_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_25dp"
+                    android:layout_height="@dimen/size_25dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_camera"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Take New Photo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size15"
+                    android:layout_marginLeft="@dimen/size_15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_for_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_25dp"
+                    android:layout_height="@dimen/size_25dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_gallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Select From Gallery"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size15" />
+
+            </LinearLayout>
+<!--
+            <LinearLayout
+                android:id="@+id/layout_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_15dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_25dp"
+                    android:layout_height="@dimen/size_25dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/fly_icon"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <TextView
+                    style="@style/App_TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:fontFamily="@font/humanst_bt_roman"
+                    android:gravity="center"
+                    android:text="@string/edit_image"
+                    android:textColor="@color/font_size15"
+                    android:textSize="@dimen/font_size15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_for_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/size_15dp"
+                android:layout_marginEnd="@dimen/size_15dp"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/fly_icon"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+                <TextView
+                    style="@style/App_TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/humanst_bt_roman"
+                    android:layout_gravity="center"
+                    android:text="@string/delete_image"
+                    android:textColor="@color/stay"
+                    android:textSize="@dimen/font_size15" />
+
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="Cancel"
+                android:paddingTop="@dimen/size_15dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size15" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

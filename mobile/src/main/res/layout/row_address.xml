@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_3dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/size_6dp"
+            android:text="Work"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size12"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/deleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_6dp"
+            android:text="DELETE"
+            android:textColor="@color/dangerRed"
+            android:textSize="@dimen/font_size12"
+            android:textStyle="normal"
+            app:fontFamily="@font/montserrat" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fullAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:padding="@dimen/size_6dp"
+        android:text="Work isoftzone "
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/font_size12"
+        android:textStyle="normal"
+        app:fontFamily="@font/roboto" />
+
+    <TextView
+        android:id="@+id/lineTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1dp"
+        android:background="@color/verylightgray"
+        android:visibility="visible" />
+</LinearLayout>

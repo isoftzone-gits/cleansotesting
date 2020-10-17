@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerMainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/logoRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_25dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="@dimen/size_80dp"
+                android:layout_height="@dimen/size_80dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:padding="@dimen/size_5dp"
+                android:src="@drawable/usercolor" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/drawerFirmTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoRelativeLayout"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="@dimen/size_10dp"
+            android:text="i-SOFTZONE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/drawerUserNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerFirmTitleTextView"
+            android:gravity="center"
+            android:padding="@dimen/size_5dp"
+            android:text=""
+            android:textSize="@dimen/size_14dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/drawerUserMobileTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerUserNameTextView"
+            android:gravity="center"
+            android:padding="@dimen/size_5dp"
+            android:text=""
+            android:textSize="@dimen/size_12dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

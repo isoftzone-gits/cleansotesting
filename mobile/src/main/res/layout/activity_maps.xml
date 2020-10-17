@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bggray_borderfillwhite" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="@drawable/bg_gray"
+            android:gravity="center"
+            android:padding="@dimen/size_6dp"
+            android:text="Place suggetions"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/font_size9"
+            android:visibility="gone"
+            app:fontFamily="@font/montserrat" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listPlacesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_60dp"
+                    android:layout_height="@dimen/size_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/mappin" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="@dimen/size_30dp"
+        android:layout_height="@dimen/size_30dp"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/size_5dp"
+                android:text="Select delivery location "
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/size_5dp"
+                android:text="Your Location"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/size_10dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/addressProgressBar"
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/currentlocatTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/size_6dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/doneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@drawable/bg_common"
+            android:gravity="center"
+            android:padding="@dimen/size_10dp"
+            android:text="Proceed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

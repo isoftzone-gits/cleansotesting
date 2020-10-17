@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_20dp"
+    android:background="@drawable/bg_round_corner"
+    android:orientation="vertical"
+    app:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/tvheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/top_rounded_corner"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:padding="@dimen/size_10dp"
+        android:text="Message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size16" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:padding="@dimen/size_15dp"
+        android:textColor="#6a7282"
+        android:textSize="@dimen/font_size14" />
+
+    <LinearLayout
+        android:id="@+id/llYesNo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35dp"
+        android:layout_marginBottom="@dimen/size_15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2.2">
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Yes"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size15"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_15dp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="No"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size15"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

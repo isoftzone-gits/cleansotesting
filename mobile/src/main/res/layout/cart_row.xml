@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/size_5dp"
+    app:cardElevation="@dimen/size_5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linearHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:padding="@dimen/size_2dp"
+                    android:text="Namkeen"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_size12"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_5dp">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="@dimen/size_50dp"
+                        android:layout_height="@dimen/size_50dp"
+                        android:background="@drawable/bggray_borderlight"
+                        android:padding="@dimen/size_3dp"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/qtyTotalTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:padding="@dimen/size_3dp"
+                            android:text="Qty : 0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size12"
+                            app:fontFamily="@font/montserrat" />
+
+                        <TextView
+                            android:id="@+id/totalAmtTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:padding="@dimen/size_2dp"
+                            android:text=" Rs.0 "
+                            android:textColor="@color/fontGreen"
+                            android:textSize="@dimen/font_size12"
+                            app:fontFamily="@font/montserrat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/minusTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bggray_borderlight"
+                                android:paddingLeft="@dimen/size_20dp"
+                                android:paddingTop="@dimen/size_5dp"
+                                android:paddingRight="@dimen/size_20dp"
+                                android:paddingBottom="@dimen/size_5dp"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size12"
+                                app:fontFamily="@font/roboto" />
+
+                            <TextView
+                                android:id="@+id/qtyTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/size_5dp"
+                                android:paddingTop="@dimen/size_3dp"
+                                android:paddingRight="@dimen/size_5dp"
+                                android:paddingBottom="@dimen/size_3dp"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size12"
+                                app:fontFamily="@font/roboto" />
+
+                            <TextView
+                                android:id="@+id/plusTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bggray_borderlight"
+                                android:paddingLeft="@dimen/size_20dp"
+                                android:paddingTop="@dimen/size_5dp"
+                                android:paddingRight="@dimen/size_20dp"
+                                android:paddingBottom="@dimen/size_5dp"
+                                android:text="+"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size12"
+                                app:fontFamily="@font/roboto" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/removeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:background="@drawable/bg_gray"
+                            android:gravity="center"
+                            android:padding="@dimen/size_6dp"
+                            android:text="REMOVE"
+                            android:textColor="@color/darkGray"
+                            android:textSize="@dimen/font_size9"
+                            app:fontFamily="@font/montserrat" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_5dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/size_6dp"
+    app:cardElevation="@dimen/size_5dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left|top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_5dp">
+
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="@dimen/size_50dp"
+                        android:layout_height="@dimen/size_50dp"
+                        android:background="@drawable/bggray_borderlight"
+                        android:padding="@dimen/size_3dp"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:padding="@dimen/size_2dp"
+                            android:text="Namkeen"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/font_size12"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/qtyTotalTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:padding="@dimen/size_3dp"
+                            android:text="Qty : 0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size12"
+                            app:fontFamily="@font/roboto" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/totalAmtTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:padding="@dimen/size_2dp"
+                        android:text=" Rs.0 "
+                        android:textColor="@color/fontGreen"
+                        android:textSize="@dimen/font_size12"
+                        app:fontFamily="@font/roboto" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/size_1dp"
+              android:layout_marginLeft="@dimen/size_50dp"
+              android:layout_marginRight="@dimen/size_50dp"
+              android:background="@color/verylightgray" />-->
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_5dp"
+        android:background="@drawable/bgheader"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.isoftzone.yoappstore.util.circleimage
+            android:id="@+id/iconImageView"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_50dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_6dp"
+            android:text="Namkeen"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/font_size10"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/lineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_2dp"
+            android:background="@color/green"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

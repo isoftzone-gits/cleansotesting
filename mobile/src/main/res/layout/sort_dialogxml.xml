@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--
+                <TextView
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="@dimen/size_6dp"
+                    android:layout_marginBottom="@dimen/size_5dp"
+                    android:background="@drawable/bgrectwhite" />
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_whitelight_rounded"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_3dp"
+                android:gravity="center"
+                android:padding="@dimen/size_6dp"
+                android:text="SORT BY "
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/veryVerylightgray" />
+
+            <LinearLayout
+                android:id="@+id/atozLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="@dimen/size_6dp"
+                    android:text="Name (A to Z) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    android:tint="@color/midGray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/veryVerylightgray" />
+
+            <LinearLayout
+                android:id="@+id/ztoaLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="@dimen/size_6dp"
+                    android:text="Name (Z To A) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    android:tint="@color/midGray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/veryVerylightgray" />
+
+            <LinearLayout
+                android:id="@+id/lowToHighLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="@dimen/size_6dp"
+                    android:text="Price (Low to High)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    android:tint="@color/midGray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/veryVerylightgray" />
+
+            <LinearLayout
+                android:id="@+id/highToLowLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="@dimen/size_6dp"
+                    android:text="Price (High To Low)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    android:tint="@color/midGray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/veryVerylightgray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_shapevlightgray"
+                    android:gravity="center"
+                    android:padding="@dimen/size_6dp"
+                    android:text="Cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size13" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

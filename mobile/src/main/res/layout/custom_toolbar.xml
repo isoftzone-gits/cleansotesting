@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:elevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/size_10dp">
+
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/size_3dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/menuLeftDrawer"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backImageView"
+            android:src="@drawable/menu"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size14"
+            app:fontFamily="@font/montserrat" />
+
+        <ImageView
+            android:id="@+id/walletImageView"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:layout_toLeftOf="@+id/notificationImageView"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_wallet"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/notificationImageView"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:layout_toLeftOf="@+id/cartRelativeLayout"
+            android:gravity="center"
+            android:src="@drawable/notification"
+            app:tint="@color/white"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/cartRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_25dp"
+                app:srcCompat="@drawable/shoppingbag"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/cartCountTextView"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_8dp"
+                android:background="@drawable/browndot"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size9"
+                app:fontFamily="@font/montserrat" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

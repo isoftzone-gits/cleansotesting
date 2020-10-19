@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_10dp"
+    android:background="@drawable/background_shapevlightgray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_80dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imgImageView"
+                android:layout_width="@dimen/size_80dp"
+                android:layout_height="@dimen/size_80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/launcher_iconapp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/size_15dp"
+            android:paddingEnd="@dimen/size_15dp">
+
+          <!--  <TextView
+                android:id="@+id/cateNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:singleLine="true"
+                android:text="Name   "
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size14" />-->
+
+            <TextView
+                android:id="@+id/sequenceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Sequence"
+                android:gravity="center"
+                android:textColor="@color/midGray"
+                android:textSize="@dimen/font_size13" />
+
+         <!--   <TextView
+                android:id="@+id/descTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:singleLine="true"
+                android:text="Desc"
+                android:visibility="gone"
+                android:textColor="@color/midGray"
+                android:textSize="@dimen/font_size13" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/editImageView"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/edit"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/deleteImageView"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:padding="@dimen/size_5dp"
+                    app:srcCompat="@drawable/ic_delete"
+                    app:tint="@color/darkGray" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_reorder_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

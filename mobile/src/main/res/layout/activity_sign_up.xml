@@ -47,7 +47,7 @@
                                 android:focusable="true"
                                 android:orientation="horizontal">
 
-                                <com.isoftzone.yoappstore.util.CircularImageView
+                                <com.isoftzone.vendor.util.CircularImageView
                                     android:id="@+id/logoImageView"
                                     android:layout_width="@dimen/size_80dp"
                                     android:layout_height="@dimen/size_80dp"
@@ -252,7 +252,6 @@
 
                                     </RelativeLayout>
 
-
                                     <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/referralCodeTextInputLayout"
                                         android:layout_width="match_parent"
@@ -277,7 +276,6 @@
                                             android:textSize="@dimen/font_size14" />
 
                                     </com.google.android.material.textfield.TextInputLayout>
-
 
                                     <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/referralCodeShopTextInputLayout"
@@ -324,7 +322,6 @@
                                             android:textSize="@dimen/font_size"
                                             android:visibility="gone" />
                                     </LinearLayout>
-
 
                                     <RelativeLayout
                                         android:layout_width="wrap_content"

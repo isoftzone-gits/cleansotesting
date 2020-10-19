@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">YOAPP</string>
+    <string name="app_name">YOAPP VENDOR</string>
 
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAyJKXE5ViV8h0J_-kvuYfbiJFCLEKd05w</string>
 

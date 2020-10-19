@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
 
-        <com.isoftzone.yoappstore.util.circleimage
+        <com.isoftzone.vendor.util.circleimage
             android:id="@+id/iconImageView"
             android:layout_width="@dimen/size_50dp"
             android:layout_height="@dimen/size_50dp"

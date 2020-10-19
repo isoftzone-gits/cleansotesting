@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.isoftzone.yoappstore"
+        applicationId "com.isoftzone.vendor"
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 2
@@ -69,6 +69,8 @@ dependencies {
 
     //animation's
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+    implementation 'com.github.clans:fab:1.6.4'//for button
 
     //implementation 'com.google.android.material:material:1.2.1'
     //implementation 'androidx.cardview:cardview:1.0.0'

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_60dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/size_10dp">
+
+                    <ImageView
+                        android:id="@+id/backImageView"
+                        android:layout_width="@dimen/size_30dp"
+                        android:layout_height="@dimen/size_30dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible"
+                        android:padding="@dimen/size_3dp"
+                        app:srcCompat="@drawable/ic_arrow_back"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/menuLeftDrawer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/backImageView"
+                        android:padding="@dimen/size_5dp" />
+
+                    <TextView
+                        android:id="@+id/toolbarTitleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size14"
+                        app:fontFamily="@font/montserrat" />
+
+                    <RelativeLayout
+                        android:id="@+id/cartRelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/donTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="Done"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size14" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/size_10dp"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true" />
+
+                            <TextView
+                                android:id="@+id/ifNoBannerTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="@dimen/size_8dp"
+                                android:gravity="center"
+                                android:text="Tap on '+' Button to add Banner"
+                                android:textColor="@color/dangerRed"
+                                android:textSize="@dimen/font_size14"
+                                android:visibility="gone"
+                                app:fontFamily="@font/montserrat" />
+
+                            <LinearLayout
+                                android:id="@+id/sliderDots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/size_5dp"
+                                android:layout_marginBottom="@dimen/size_2dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/size_3dp" />
+
+                            <ImageView
+                                android:id="@+id/editBannerImageView"
+                                android:layout_width="@dimen/size_40dp"
+                                android:layout_height="@dimen/size_40dp"
+                                android:layout_above="@+id/addBannerImageView"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="@dimen/size_10dp"
+                                android:background="@drawable/circle_gray"
+                                android:backgroundTint="@color/veryVerylightgray"
+                                android:padding="@dimen/size_15dp"
+                                android:src="@drawable/edit"
+                                app:tint="@color/darkRed" />
+
+                            <ImageView
+                                android:id="@+id/addBannerImageView"
+                                android:layout_width="@dimen/size_40dp"
+                                android:layout_height="@dimen/size_40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="@dimen/size_10dp"
+                                android:background="@drawable/circle_gray"
+                                android:backgroundTint="@color/veryVerylightgray"
+                                android:padding="@dimen/size_15dp"
+                                android:src="@drawable/plus"
+                                app:tint="@color/darkRed" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categoryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/row_banner"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ifNoCateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Tap on '+' Button to add category"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/font_size18" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:theme="@style/AppThemeHome"
+                android:tint="@color/white"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/nav_header_home" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/drawerRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

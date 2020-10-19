@@ -15,7 +15,7 @@
             android:layout_height="@dimen/size_30dp"
             android:layout_centerInParent="true" />
 
-        <com.isoftzone.yoappstore.util.zoomage.ZoomageView
+        <com.isoftzone.vendor.util.zoomage.ZoomageView
             android:id="@+id/enlargeImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
